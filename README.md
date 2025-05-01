@@ -1,149 +1,87 @@
-# React-додаток із інтеграцією бібліотек для UI
 
-Цей проєкт демонструє створення **React-додатку** із використанням однієї з популярних бібліотек компонентів: **Material UI**, **Tailwind CSS** або **Ant Design**. Основна мета — навчитися інтегрувати ці бібліотеки та використовувати їх для створення адаптивних і функціональних інтерфейсів.
+# 🚀 React Project with Tailwind CSS — Responsive Landing Page
 
----
-
-## 🛠 Основні можливості проєкту
-
-- 📦 **React-додаток**, створений за допомогою **Vite**.
-- 🌟 Інтеграція однієї з бібліотек UI:
-  - **Material UI** для сучасних та багатих компонентів.
-  - **Tailwind CSS** для створення стилів на основі утиліт.
-  - **Ant Design** для компонентів корпоративного рівня.
-- 📐 Кастомні компоненти, зокрема `Header`, `Form` та `Card`, які демонструють:
-  - Адаптивний дизайн із використанням обраної бібліотеки.
-  - Динамічне керування станом і передавання пропсів.
-- 🌍 Додаток, розгорнутий на платформі **Vercel** або **Netlify** для загального доступу.
-- 💻 Чиста та модульна структура з дотриманням найкращих практик React.
+This project was created as part of an assignment to integrate **Tailwind CSS** into a React application. It features a responsive landing page built with custom components, styled using Tailwind, and includes a basic animation.
 
 ---
 
-## 📁 Структ
+## 🧠 Objective
+
+- Practical application of **Tailwind CSS** in a React project.
+- Development of modular and responsive components.
+- Implementation of custom animation (`heartbeat`).
+- Deployment of the application to hosting.
 
 ---
 
-## 🚀 Як розпочати роботу
+## 🧩 Key Components
 
-### 🔧 Попередні вимоги
+- `Header.jsx` — top section with logo
+- `Hero.jsx` — main section with background, image, and text
+- `SocialIcons.jsx` — social media icon set
+- `App.jsx` — main application integration
+- `main.jsx` — entry point of the application
 
-- Встановлений **Node.js**.
-- Менеджер пакетів **Yarn** або **npm**.
-- Редактор коду (наприклад, **Visual Studio Code**).
+---
 
-### 🛠 Інструкція з налаштування
+## 📁 Project Structure
 
-1. **Клонування репозиторію:**
-   ```bash
-   git clone <repository-url>
-   cd my-react-app
-   ```
+```
+my-react-app/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   ├── images/
+│   │   ├── bg.png
+│   │   ├── boat_logo.png
+│   │   ├── facebook_logo.png
+│   │   ├── instagram_logo.png
+│   │   └── twitter_logo.png
+│   └── components/
+│       ├── Header.jsx
+│       ├── Hero.jsx
+│       └── SocialIcons.jsx
+├── tailwind.config.js
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-2. **Встановлення залежностей:**
-   ```bash
-   yarn install
-   # або
-   npm install
-   ```
+---
 
-3. **Інсталяція бібліотеки UI:**
-   Залежно від вибраної бібліотеки, виконайте відповідну команду:
-   - **Material UI**:
-     ```bash
-     npm install @mui/material @emotion/react @emotion/styled
-     ```
-   - **Tailwind CSS**:
-     ```bash
-     npm install -D tailwindcss postcss autoprefixer
-     npx tailwindcss init
-     ```
-   - **Ant Design**:
-     ```bash
-     npm install antd
-     ```
+## 🌐 Technologies Used
 
-4. **Запуск локального сервера:**
-   ```bash
+- ⚛️ **React** — library for building user interfaces
+- 🌬️ **Tailwind CSS** — utility-first CSS framework
+- ⚡ **Vite** — fast development build tool
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd my-react-app
+```
+
+### 2. Install dependencies
+
+```bash
+   yarn
+```
+
+### 3. Start the development server
+
+```bash
    yarn dev
-   # або
-   npm run dev
-   ```
+```
 
-5. **Відкрити у браузері**: **http://localhost:5173**
+🔗 Open in browser: **http://localhost:5173**
 
 ---
 
-## ✨ Основні компоненти
+## 🌍 Deployment
 
-1. **Header.jsx**: 
-   - Компонент шапки програми з використанням бібліотек UI.
-
-2. **Form.jsx**: 
-   - Динамічна форма, що демонструє використання ключових компонентів, таких як Input, Button і Validation.
-
-3. **Card.jsx**:
-   - Універсальна карточка для відображення інформації.
-
----
-
-## 🌐 Розгортання
-
-Додаток розгорнуто на платформі статичного хостингу для зручного доступу:
-
-- **Платформа**: [Vercel](https://vercel.com) або [Netlify](https://netlify.com)
-- **Демо-версія**: [Дивитися додаток](<live-demo-url>)
-
----
-
-## 📚 Використані технології
-
-- **React** (v19.0.0) як основний JavaScript-фреймворк.
-- **Vite** для швидкого старту та роботи.
-- **Material UI**, **Tailwind CSS** або **Ant Design** для компонування інтерфейсу.
-- **PostCSS** та **Autoprefixer** для налаштування Tailwind CSS (за потреби).
-
----
-
-## 💻 Інструкції з розгортання
-
-1. **Зібрати додаток:**
-   ```bash
-   yarn build
-   # або
-   npm run build
-   ```
-
-2. **Розгортання на платформу хостингу:**
-   - Для **Vercel**:
-     ```bash
-     vercel deploy
-     ```
-   - Для **Netlify**:
-     Завантажте папку `dist/` через Netlify UI або використовуйте CLI:
-     ```bash
-     netlify deploy
-     ```
-
----
-
-## ✅ Перевірка проєкту
-
-- [x] Ініціалізовано проєкт із використанням Vite.
-- [x] Інтегровано одну з бібліотек:
-  - Material UI / Tailwind CSS / Ant Design.
-- [x] Адаптивно створені компоненти з необхідною функціональністю.
-- [x] Застосунок успішно працює локально без помилок.
-- [x] Розгорнуто на Vercel/Netlify.
-- [x] Додано README із описом проєкту та керівництвом.
-
----
-
-## 🙌 Жива демонстрація
-
-🌐 **URL додатку**: [Переглянути демо](<live-demo-url>)
-
----
-
-## 📝 Ліцензія
-
-Цей проєкт ліцензовано за ліцензією MIT — подробиці див. у файлі [LICENSE](LICENSE).
+- [Vercel](https://r11-nadiias-projects-dc6d9292.vercel.app/)
