@@ -42,7 +42,6 @@ my-react-app/
 │       ├── Header.jsx
 │       ├── Hero.jsx
 │       └── SocialIcons.jsx
-├── tailwind.config.js
 ├── package.json
 ├── vite.config.js
 └── README.md
